@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        .container{
+            /* background-color: rgb(9, 106, 106); */
+            height: 80vh;
+            width: 30vh;
+
+        }
+        .box{
+            background-color: aqua;
+            height: 45px;
+            width: 34px;
+            animation-name: harrykaAnimation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse;
+            /* animation-play-state: paused; */
+          text-align: center;
+          /* rotate: 90deg; */
+
+        }
+        @keyframes harrykaAnimation {
+            from{
+                background-color: red;
+                
+            }
+            to{
+                transform: translateX(1000px);
+                background-color: yellow;
+            }
+        }
+        /* body{
+            rotate: 90deg;
+            height:50px;
+           
+        }  */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+    </div>
+    
+</body>
+</html>

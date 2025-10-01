@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Document</title>
+  <style>
+    h1 {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    p {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-style: italic;
+      /* Removed invalid text-decoration values */
+    }
+
+    h2 {
+      text-transform: uppercase;
+      /* text-decoration accepts values like underline/overline/line-through */
+      text-decoration: underline;
+      /* Use color: aqua to set color */
+      color: aqua;
+    }
+
+    .lorem {
+      border: 2px solid red;
+      width: 145px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; /* Needed for ellipsis to work */
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>Font</h1>
+    <h2>About fonts</h2>
+    <p>this is a video on font</p>
+    <p class="lorem">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quo quaerat, beatae amet commodi dicta optio in esse possimus exercitationem aliquid nulla harum odio architecto ut fuga nihil! Distinctio placeat, nisi commodi quas impedit minima non assumenda tenetur, dolorem sit aut qui maxime facere illum!
+    </p>
+  </div>
+</body>
+</html>
